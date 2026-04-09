@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bxf853jpgvgvs"]
 
-[ext_resource type="Script" uid="uid://bcibn4ki7qnsm" path="res://debug/scripts/player.gd" id="1_g2els"]
+[ext_resource type="Script" uid="uid://bcibn4ki7qnsm" path="res://scripts/player.gd" id="1_g2els"]
 [ext_resource type="Texture2D" uid="uid://cbxdmc8h0egvl" path="res://assets/player.png" id="2_qhqgy"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_g2els"]
@@ -293,11 +293,9 @@ animations = [{
 }]
 
 [node name="player" type="CharacterBody2D" unique_id=1051468050]
-collision_layer = 9
 script = ExtResource("1_g2els")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1333233171]
-light_mask = 9
 position = Vector2(0, -7)
 shape = SubResource("CapsuleShape2D_g2els")
 
@@ -305,6 +303,3 @@ shape = SubResource("CapsuleShape2D_g2els")
 position = Vector2(0, -15)
 sprite_frames = SubResource("SpriteFrames_j2b1d")
 animation = &"idleback"
-
-[node name="Camera2D" type="Camera2D" parent="." unique_id=256006703]
-position = Vector2(0, -7)
