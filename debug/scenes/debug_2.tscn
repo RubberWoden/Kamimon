@@ -1,6 +1,7 @@
 [gd_scene format=4 uid="uid://ca0nj7l73hu1g"]
 
 [ext_resource type="Texture2D" uid="uid://d3is00hj8epx" path="res://assets/plains.png" id="1_dfwc7"]
+[ext_resource type="Script" uid="uid://cj38u41qjvfv0" path="res://debug/scripts/debug_2.gd" id="1_m64rd"]
 [ext_resource type="Texture2D" uid="uid://c7ee2lxor2p1k" path="res://assets/grass.png" id="2_m64rd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_y7d13"]
@@ -384,6 +385,7 @@ sources/0 = SubResource("TileSetAtlasSource_kqmea")
 sources/1 = SubResource("TileSetAtlasSource_flq7d")
 
 [node name="debug2" type="Node2D" unique_id=279902675]
+script = ExtResource("1_m64rd")
 
 [node name="base" type="TileMapLayer" parent="." unique_id=1553418417]
 z_index = -2

@@ -1,12 +1,9 @@
 [gd_scene format=3 uid="uid://b7eafd5chqbxl"]
 
 [ext_resource type="PackedScene" uid="uid://bxf853jpgvgvs" path="res://debug/scenes/player.tscn" id="1_nnsk1"]
+[ext_resource type="Script" uid="uid://dt8c6x7c2x6jk" path="res://debug/scripts/debugworld_1.gd" id="2_drc78"]
 [ext_resource type="PackedScene" uid="uid://b6syh0sko5t87" path="res://debug/scenes/debugworld1.tscn" id="2_rwgxs"]
 [ext_resource type="PackedScene" uid="uid://bi2k3kn4qavt1" path="res://debug/scenes/scene_trigger.tscn" id="3_v3vku"]
-
-[sub_resource type="GDScript" id="GDScript_v3vku"]
-script/source = "extends Node
-"
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_v3vku"]
 radius = 4.0
@@ -16,7 +13,7 @@ y_sort_enabled = true
 
 [node name="debugworld1" parent="." unique_id=902589501 instance=ExtResource("2_rwgxs")]
 position = Vector2(-3, 0)
-script = SubResource("GDScript_v3vku")
+script = ExtResource("2_drc78")
 
 [node name="SceneTrigger" parent="debugworld1" unique_id=1237144822 instance=ExtResource("3_v3vku")]
 position = Vector2(-39, 24)
@@ -25,5 +22,5 @@ connected_scene = "uid://ca0nj7l73hu1g"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="debugworld1/SceneTrigger" unique_id=1342047025]
 shape = SubResource("CircleShape2D_v3vku")
 
-[node name="player" parent="debugworld1" unique_id=1051468050 instance=ExtResource("1_nnsk1")]
-position = Vector2(17, 33)
+[node name="Player" parent="." unique_id=1051468050 instance=ExtResource("1_nnsk1")]
+position = Vector2(14, 33)
