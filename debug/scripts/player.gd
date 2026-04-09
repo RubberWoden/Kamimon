@@ -1,6 +1,6 @@
-extends CharacterBody2D
+class_name Player extends CharacterBody2D
 
-@export var SPEED : float = 100.0
+@export var SPEED : float = 75.0
 @onready var anim: AnimatedSprite2D = $AnimatedSprite2D
 
 var last_direction: Vector2 = Vector2.RIGHT
